@@ -1,0 +1,23 @@
+$font: "Open Sans", sans-serif;
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+h1 {
+	color: #007acc;
+	font: $font;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+}
+h2 {
+	color: #80ccff;
+	font: $font;
+	text-align: center;
+}
+p {
+	color: #002e4d;
+	font: $font;
+	text-align: center;
+}
