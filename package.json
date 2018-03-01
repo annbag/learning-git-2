@@ -11,9 +11,9 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* test",
-    "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build:clean": "rimraf css/*.css",
     "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
     "watch:browser-sync": "browser-sync start --server --files css/*.css *.html",
@@ -34,7 +34,11 @@
   "homepage": "https://github.com/annbag/learning-git-2#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "nu-html-checker": "^0.1.0"
+    "globstar": "^1.0.0",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^3.3.0"
   },
   "dependencies": {
     "autoprefixer-cli": "^1.0.0"
